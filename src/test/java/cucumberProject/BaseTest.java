@@ -1,4 +1,4 @@
-package cucumber_project;
+package cucumberProject;
 
 import org.junit.Assert;
 import org.openqa.selenium.*;

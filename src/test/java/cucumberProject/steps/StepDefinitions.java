@@ -1,6 +1,6 @@
-package cucumber_project.steps;
+package cucumberProject.steps;
 
-import cucumber_project.BaseTest;
+import cucumberProject.BaseTest;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
