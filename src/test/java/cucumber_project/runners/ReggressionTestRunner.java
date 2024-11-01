@@ -1,7 +1,7 @@
-package runners;
+package cucumber_project.runners;
 
-import cucumber.api.CucumberOptions;
-import cucumber.api.junit.Cucumber;
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
 import net.masterthought.cucumber.Configuration;
 import net.masterthought.cucumber.ReportBuilder;
 import org.junit.AfterClass;
@@ -13,15 +13,13 @@ import java.util.List;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/test/java/Features",
-        glue = "steps",
-        junit = "--step-notifications",
+        features = "src/test/java/cucumber_project/features",
+        glue = "cucumber_project.steps",
+        stepNotifications = true,
         tags = "@Regression",
         plugin = {
                 "pretty",
-                "html:target/cucumber-reports",
-                "json:target/cucumber-reports/Cucumber.json",
-                "junit:target/cucumber-reports/Cucumber.xml"
+                "json:target/cucumber-reports/Cucumber.json"
         })
 public class ReggressionTestRunner {
 
